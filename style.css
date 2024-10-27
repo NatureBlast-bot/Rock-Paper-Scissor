@@ -1,0 +1,199 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+h1{
+    background-color: rgb(25, 27, 28);
+    color: white;
+    height: 5rem;
+    line-height: 5rem; /*To bring the heading in center*/
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color: burlywood;
+
+}
+
+.choice{
+    height:165px;
+    width:165px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+img{
+    height:90%;
+    width:90%;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display:flex; /*To bring them in a horizantal line*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap:1rem;
+}
+
+.score{
+    text-align: center;
+}
+
+.scoreboard{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin:3rem;
+    gap:4rem;
+}
+
+#your-score,
+#comp-score{
+    font-size:4rem;
+    text-align: center;
+}
+
+.msg-container{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.msg{
+    background-color: black;
+    color: azure;
+    padding:1rem;
+    font-size:2rem;
+    display:inline;
+    border-radius: 1rem;
+}
+
+#won{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.winner{
+    display:inline;
+    background-color: black;
+    color:wheat;
+    font-size:2rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.gayab{
+    display:none;
+}
+
+.new-game{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.newgame{
+    
+    font-size: 2rem;
+    background-color: black;
+    color: azure;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    
+}
+
+.newgame:hover{
+    cursor:grab;
+}
+
+/*Responsive Design*/
+@media(max-width:1024px){
+    /*Tablet*/
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    #your-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+
+    .msg {
+        font-size: 1.8rem;
+        padding: 1.2rem;
+    }
+
+    .newgame {
+        font-size: 1.5rem;
+    }
+
+    .winner {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Mobile */
+    h1 {
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: row;
+    }
+
+    .choice {
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+
+    #your-score,
+    #comp-score {
+        font-size: 2rem;
+    }
+
+    .scoreboard {
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .newgame {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .winner {
+        font-size: 1.8rem;
+    }
+}
+
+
